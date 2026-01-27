@@ -1,0 +1,224 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    background-color: #fafafa;
+    color: #1a1a1a;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+}
+
+/* Logo */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 8px;
+}
+
+/* Brand name */
+.brand-name {
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: 700;
+    color: #1a1a1a;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+/* Slogan */
+.slogan {
+    font-size: clamp(20px, 3vw, 28px);
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+/* Description paragraphs */
+.description {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.description p {
+    font-size: clamp(16px, 2vw, 18px);
+    font-weight: 400;
+    color: #1a1a1a;
+    margin-bottom: 16px;
+    line-height: 1.7;
+}
+
+.description p:last-child {
+    margin-bottom: 0;
+}
+
+/* Form */
+.waiting-list-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    display: flex;
+    gap: 0;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.button-banner {
+    border: 1px solid #000000;
+    color: #000000;
+    padding: 14px 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 500;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease;
+}
+
+.submit-button {
+    cursor: pointer;
+    background-color: #000000;
+    border: none;
+    color: #ffffff;
+}
+
+.submit-button:hover {
+    background-color: #333333;
+}
+
+.submit-button:active {
+    background-color: #1a1a1a;
+}
+
+.email-input {
+    flex: 1;
+    min-width: 200px;
+    padding: 14px 16px;
+    border: 1px solid #d0d0d0;
+    font-family: 'Inter', sans-serif;
+    font-size: clamp(14px, 2vw, 16px);
+    color: #1a1a1a;
+    background-color: #ffffff;
+    outline: none;
+    transition: border-color 0.2s ease;
+}
+
+.email-input:focus {
+    border-color: #000000;
+}
+
+.email-input::placeholder {
+    color: #999999;
+}
+
+/* Thank you message */
+.thank-you-message {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 14px 24px;
+    background-color: #f0f0f0;
+    border: 1px solid #d0d0d0;
+    border-radius: 4px;
+}
+
+.thank-you-message p {
+    font-size: clamp(14px, 2vw, 16px);
+    font-weight: 500;
+    color: #1a1a1a;
+    margin: 0;
+    text-align: center;
+}
+
+/* Footer */
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    width: 100%;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 8px;
+    padding-top: 24px;
+}
+
+.footer a {
+    font-size: clamp(12px, 1.5vw, 14px);
+    color: #1a1a1a;
+    text-decoration: none;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #666666;
+    text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    body {
+        padding: 16px;
+    }
+    
+    .content {
+        gap: 20px;
+    }
+    
+    .logo {
+        width: 80px;
+    }
+    
+    .form-group {
+        flex-direction: column;
+    }
+    
+    .submit-button {
+        width: 100%;
+    }
+    
+    .email-input {
+        width: 100%;
+    }
+    
+    .footer {
+    margin: 0 auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 900px;
+    }
+}

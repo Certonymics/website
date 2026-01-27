@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="c.email - The easiest way to send secure emails. End-to-end encrypted messages from your existing email address."
+    />
+    <title>c.email - Secure Email</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+  <body>
+    <main class="container">
+      <div class="content">
+        <img src="assets/logo.svg" alt="c.email logo" class="logo" />
+
+        <p class="slogan">Secure emails made easy.</p>
+
+        <div class="description">
+          <p>
+            C.Email lets you send authenticated, end-to-end encrypted messages
+            from your existing email address.
+          </p>
+          <p>
+            Get started in minutes to protect your emails from privacy
+            violations and fraud.
+          </p>
+          <p>
+            C.Email is the first step towards the Internet as it should have
+            been.
+          </p>
+        </div>
+
+        <form
+          name="waiting-list"
+          method="POST"
+          netlify
+          class="waiting-list-form"
+          id="waiting-list-form"
+        >
+          <input type="hidden" name="form-name" value="waiting-list" />
+          <div class="form-group">
+            <div class="button-banner">Join the waiting list:</div>
+            <input
+              type="email"
+              name="email"
+              placeholder="Enter email"
+              required
+              class="email-input"
+            />
+            <button type="submit" class="button-banner submit-button">
+              Join
+            </button>
+          </div>
+        </form>
+
+        <div
+          class="thank-you-message"
+          id="thank-you-message"
+          style="display: none"
+        >
+          <p>Thank you for joining! We'll be in touch soon.</p>
+        </div>
+
+        <footer class="footer">
+          <a href="terms.html">Terms and conditions</a>
+          <a href="privacy.html">Privacy policy</a>
+        </footer>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
