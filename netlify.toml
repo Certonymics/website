@@ -1,11 +1,8 @@
 [build]
   publish = "."
 
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+# Redirects are defined in _redirects (root). Keeping them out of netlify.toml
+# so the catch-all rule doesn't shadow the /.well-known/* passthrough.
 
-# Form handling configuration
 [build.environment]
   NODE_VERSION = "18"
