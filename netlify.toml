@@ -1,8 +1,7 @@
 [build]
-  publish = "."
+  publish = "public"
 
-# Redirects are defined in _redirects (root). Keeping them out of netlify.toml
-# so the catch-all rule doesn't shadow the /.well-known/* passthrough.
+# Redirects live in public/_redirects (not netlify.toml) so /.well-known/* isn't shadowed.
 
 [build.environment]
   NODE_VERSION = "18"
