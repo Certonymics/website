@@ -1,86 +1,51 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="cDot - one private app for your email, chats, payments, and recovery."
-    />
-    <title>cDot</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="shortcut icon" href="/favicon.ico" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Certonymity is building the internet as it should have been.">
+    <title>Certonymity</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="icon" type="image/svg+xml" href="./assets/logo.svg">
+</head>
+<body class="home">
     <main class="container">
       <div class="content">
-        <img src="assets/logo.svg" alt="c.email logo" class="logo" />
+        <img src="./assets/logo.svg" alt="Certonymity logo" class="logo">
 
-        <p class="slogan">One private app for your email, chats, payments, and recovery.</p>
+        <p class="slogan">Certonymity is building the internet as it should have been.</p>
 
         <div class="description">
-          <p>
-            cDot lets you send authenticated, end-to-end encrypted messages
-            from your existing email address.
-          </p>
-          <p>
-            Get started in minutes to protect your emails from privacy
-            violations and fraud.
-          </p>
-          <p>
-            cDot is the first step towards the Internet as it should have
-            been.
-          </p>
+          <p>Privacy-first, decentralised, and accountable: these are our principles for making the internet, identity and payments better for everyone who uses them.</p>
+          <p>Live now: <a href="https://c.email/">C.Email</a> – secure emails made easy.</p>
+          <p>Coming soon: Cdot – the everyday app for encrypted email, messaging, payments, and identity.</p>
         </div>
 
-        <form
-          name="waiting-list"
-          method="POST"
-          netlify
-          class="waiting-list-form"
-          id="waiting-list-form"
-        >
-          <input type="hidden" name="form-name" value="waiting-list" />
+        <form class="waiting-list-form" id="waiting-list-form" method="POST" name="waiting-list" action="/?success=true">
+          <input type="hidden" name="form-name" value="waiting-list">
+          <p class="form-label">Sign up to test the next generation of privacy products and get early access to our community:</p>
           <div class="form-group">
-            <div class="button-banner">Join the waiting list:</div>
-            <input
-              type="email"
-              name="email"
-              placeholder="Enter email"
-              required
-              class="email-input"
-            />
-            <button type="submit" class="button-banner submit-button">
-              Join
-            </button>
+            <input type="email" name="email" placeholder="Enter email" required class="email-input">
+            <button type="submit" class="submit-button">Join the waiting list</button>
           </div>
         </form>
 
-        <div
-          class="thank-you-message"
-          id="thank-you-message"
-          style="display: none"
-        >
+        <div class="thank-you-message" id="thank-you-message" style="display: none">
           <p>Thank you for joining! We'll be in touch soon.</p>
         </div>
-
-        <footer class="footer">
-          <a href="terms.html">Terms and conditions</a>
-          <a href="privacy.html">Privacy policy</a>
-        </footer>
       </div>
     </main>
 
-    <script src="script.js"></script>
-  </body>
+    <footer class="footer">
+      <a href="./index.html" class="footer-logo"><img src="./assets/logo.svg" alt="Certonymity"></a>
+      <a href="https://c.email/">C.Email</a>
+
+      <a href="mailto:info@certonymity.com">Contact</a>
+      <a href="./terms/">Terms</a>
+      <a href="./privacy/">Privacy</a>
+      <span class="footer-copyright">&copy; 2026 Certonymity</span>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
 </html>
