@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="How to request deletion of cDot app data"
+    />
+    <title>Data Deletion - cDot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <style>
+      .back-link {
+        display: inline-block;
+        margin-bottom: 32px;
+        padding: 12px 24px;
+        background-color: #000000;
+        color: #ffffff;
+        text-decoration: none;
+        font-weight: 500;
+        border-radius: 4px;
+        transition: background-color 0.2s ease;
+        align-self: flex-start;
+      }
+
+      .back-link:hover {
+        background-color: #333333;
+      }
+
+      .page-content {
+        text-align: left;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+
+      .page-content h1 {
+        font-size: clamp(28px, 4vw, 36px);
+        font-weight: 700;
+        margin-bottom: 24px;
+        color: #1a1a1a;
+      }
+
+      .page-content h2 {
+        font-size: clamp(20px, 3vw, 24px);
+        font-weight: 600;
+        margin-top: 32px;
+        margin-bottom: 16px;
+        color: #1a1a1a;
+      }
+
+      .page-content p,
+      .page-content li {
+        font-size: clamp(16px, 2vw, 18px);
+        line-height: 1.7;
+        margin-bottom: 16px;
+        color: #1a1a1a;
+      }
+
+      .page-content ul {
+        margin: 0 0 16px 24px;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="container">
+      <div class="content">
+        <a href="index.html" class="back-link">&larr; Back to Home</a>
+
+        <div class="page-content">
+          <h1>Data Deletion</h1>
+
+          <p><strong>Last updated:</strong> 29 June 2026</p>
+
+          <h2>Delete your data in the app</h2>
+          <p>
+            cDot does not create a separate backend account for you. You connect
+            an existing Google or Microsoft email account with OAuth, and your
+            app data is primarily stored locally on your device. It does store your 
+            public encryption and verification key on the C-Layer blockchain.
+          </p>
+          <p>
+            To delete your local app and blockchain data, open cDot and go to
+            <strong>Settings &gt; Delete account</strong>. This removes local
+            account data from your device and starts deletion of cDot-managed
+            records associated with the account.
+          </p>
+
+          <h2>Request deletion without the app</h2>
+          <p>
+            If you no longer have access to the app, you can request deletion of
+            any cDot-managed data associated with your email address by
+            contacting us at
+            <a href="mailto:delete-account@certonymity.com">delete-account@certonymity.com</a>.
+          </p>
+          <p>Please include:</p>
+          <ul>
+            <li>The email address you connected to cDot.</li>
+            <li>A short note saying that you want your cDot data deleted.</li>
+          </ul>
+          <p>
+            We may ask you to verify control of the email address before
+            processing the request.
+          </p>
+
+          <h2>Data controlled by email providers</h2>
+          <p>
+            cDot cannot delete your Google, Gmail, Microsoft, or Outlook
+            account. To delete data held by those providers, please use the
+            deletion tools provided by the relevant provider.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
